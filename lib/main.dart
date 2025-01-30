@@ -1,21 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:uniqcast_code_challenge/features/app.dart';
 
 void main() {
-  runApp(const MyApp());
+  final app = App.instance();
+  runApp(app);
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Uniqcast Code Challenge',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: SizedBox(),
-    );
-  }
-}
