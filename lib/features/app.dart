@@ -4,8 +4,7 @@ import 'package:uniqcast_code_challenge/core/managers/router_manager/router_conf
 import 'package:uniqcast_code_challenge/core/managers/theme_manager/app_theme.dart';
 
 class App extends StatelessWidget {
-
-   const App._();
+  const App._();
 
   static App instance() => const App._();
 
@@ -13,10 +12,8 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       title: AppConstants.appName,
-     theme: AppTheme.lightTheme, 
-      darkTheme: AppTheme.darkTheme, 
-      themeMode: ThemeMode.system,
-      routerConfig: routerConfig
+      theme: AppTheme.darkTheme,
+      routerConfig: routerConfig,
     );
   }
 }
